@@ -202,7 +202,7 @@ return view.extend({
 				var refs = chain_refs[cdiv.getAttribute('data-chain')];
 				if (refs && refs.length) {
 					rspan.classList.add('cbi-tooltip-container');
-					rspan.appendChild(E('small', { 'class': 'cbi-tooltip ifacebadge', 'style': 'top:1em; left:auto' }, [ E('ul') ]));
+					rspan.appendChild(E('small', { 'class': 'cbi-tooltip fwchainref', 'style': 'top:1em; left:auto' }, [ E('ul') ]));
 
 					refs.forEach(L.bind(function(ref) {
 						var chain = ref[0].parentNode.getAttribute('data-chain'),

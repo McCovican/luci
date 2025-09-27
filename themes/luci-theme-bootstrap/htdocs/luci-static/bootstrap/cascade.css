@@ -1803,13 +1803,13 @@ body.modal-overlay-active #modal_overlay {
 	background: var(--background-color-high);
 	white-space: pre;
 	padding: 2px 5px;
-	opacity: 0;
+	display: none;
 	transition: opacity .25s ease-in;
 }
 
 .cbi-tooltip-container:hover .cbi-tooltip:not(:empty) {
 	left: auto;
-	opacity: 1;
+	display: inline-block;
 	transition: opacity .25s ease-in;
 }
 
@@ -2190,6 +2190,9 @@ th[data-sort-direction="desc"]::after { content: "\a0\25bc"; }
 
 .ifacebadge {
 	display: inline-block;
+}
+
+.ifacebadge, .fwchainref {
 	flex-direction: row;
 	border: 1px solid var(--border-color-high);
 	padding: 2px;
